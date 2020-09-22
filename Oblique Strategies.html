@@ -1,0 +1,39 @@
+<!doctype HTML>
+<html>
+<head>
+    <title>Electronic Music Strategies</title>
+</head>
+
+<body>
+<h1>Electronic Music Production Strategies</h1>
+    <p>Click the button below to get a random tip to help when you are stuck with music production. Inspired by Brian Eno and Peter Schmidt's <em>Oblique Strategies</em>.</p>
+  
+
+    <script>
+   function getDeck()
+{
+    var myarray= new Array("Use a saw wave with a high attack and release to create a string. This can hold one note for tension or can change to provide harmonic movement.",
+                           "Delete any element that isn't absolutely necessary.",
+                           "Remember the melting pot. Get every single element ready before you start arranging.",
+                           "Try starting with an element that you do not usually start with. If you usually build drums first - try starting with bass.",
+                           "You cannot fix it in the mix.",
+                           "Get up from your desk and take a break."
+             
+                          );
+    var random = myarray[Math.floor(Math.random() * myarray.length)];
+    //alert(random);
+    document.getElementById("message").innerHTML=random;
+}
+    </script>
+
+<input type="button" id="btnSearch" value="Search" onclick="getDeck();" />
+<p id="message"></p>
+
+
+</body>
+</html>
+
+
+
+   
+    
